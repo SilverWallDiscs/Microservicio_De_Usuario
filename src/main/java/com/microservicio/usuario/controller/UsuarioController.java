@@ -1,5 +1,7 @@
 package com.microservicio.usuario.controller;
 
+import java.net.URI;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -11,10 +13,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.microservicio.usuario.entity.UsuarioEntity;
 import com.microservicio.usuario.model.Usuario;
 import com.microservicio.usuario.model.UsuarioDto;
 import com.microservicio.usuario.service.UsuarioService;
-
 
 
 @RestController

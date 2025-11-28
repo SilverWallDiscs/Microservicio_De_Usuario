@@ -1,17 +1,10 @@
 package com.microservicio.usuario.model;
-
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
-
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class Usuario {
-
-    private int idUsuario;
+    // Para POST no es necesario enviar idUsuario
+    private Long idUsuario; // opcional para PUT/GET
     private String nombre;
     private String correo;
     private String contrasena;
-
 }

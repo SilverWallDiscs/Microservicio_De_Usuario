@@ -6,13 +6,7 @@ import org.springframework.stereotype.Repository;
 import com.microservicio.usuario.entity.UsuarioEntity;
 
 @Repository
-public interface UsuarioRepository extends JpaRepository<UsuarioEntity, Integer>{
-
-    UsuarioEntity findByIdUsuario(int idUsuario);
-    Boolean existsByIdUsuario(int idUsuario);
-    void deleteByIdUsuario(int idUsuario);
-
-    
+public interface UsuarioRepository extends JpaRepository<UsuarioEntity, Long> {
+    boolean existsByCorreo(String correo);
+    UsuarioEntity findByIdUsuario(Long idUsuario); // o usa findById(id) de JpaRepository
 }
-
-

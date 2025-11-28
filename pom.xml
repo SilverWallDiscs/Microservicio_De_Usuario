@@ -37,7 +37,36 @@
 			<version>8.0.33</version>
 		</dependency>
 
+		<dependency>
+			<groupId>com.oracle.database.security</groupId>
+			<artifactId>oraclepki</artifactId>
+			<version>23.2.0.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/resources/lib/oraclepki.jar</systemPath>
+		</dependency>
 
+		<dependency>
+			<groupId>com.oracle.database.security</groupId>
+			<artifactId>osdt_core</artifactId>
+			<version>23.2.0.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/resources/lib/osdt_core.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>com.oracle.database.security</groupId>
+			<artifactId>osdt_cert</artifactId>
+			<version>23.2.0.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/resources/lib/osdt_cert.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>com.oracle.database.jdbc</groupId>	
+			<artifactId>ojdbc11</artifactId> 
+			<version>23.2.0.0</version>
+		</dependency>
 
 		<dependency>
       		<groupId>org.springdoc</groupId>
